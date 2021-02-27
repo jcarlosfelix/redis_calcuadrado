@@ -35,6 +35,7 @@ while i <= 100:
         break
     i = int(i)
     x = i*i
-    r.rpush('queue_trabajo', x)
-    print('recuperando', i, ' ... cuadrado: ', x)    
+
+    print('recuperando', i, ' ... cuadrado: ', x)
+    #r.rpush('queue_trabajo', x)
     time.sleep(0.25)
