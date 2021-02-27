@@ -31,6 +31,7 @@ i, x = 0, 0
 while i <= 100:    
     i = r.lpop('queue_entrada')
     if i is None:
+        print('se agotaron los elementos')        
         break
     i = int(i)
     x = i*i
